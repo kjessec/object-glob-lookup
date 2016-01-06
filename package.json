@@ -1,6 +1,6 @@
 {
   "name": "object-path-wild",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Access subtree elements using keypath, with wildcard ('*') support.",
   "main": "index.js",
   "keywords": [
