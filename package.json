@@ -1,0 +1,14 @@
+{
+  "name": "object-glob-lookup",
+  "version": "1.0.0",
+  "description": "Select subtree elements, with wildcard support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**-test.js"
+  },
+  "author": "Jesse Chung <jesse@soob.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
