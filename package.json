@@ -1,10 +1,10 @@
 {
-  "name": "object-glob-lookup",
+  "name": "object-path-wild",
   "version": "1.0.0",
-  "description": "Select subtree elements, with wildcard support.",
+  "description": "Access subtree elements using keypath, with wildcard ('*') support.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/**-test.js"
+    "test": "tape test.js"
   },
   "author": "Jesse Chung <jesse@soob.co>",
   "license": "MIT",

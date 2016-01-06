@@ -1,5 +1,5 @@
 'use strict';
-const ogl = require('../');
+const lookup = require('../');
 const test = require('tape');
 
 test('object+array', function(t) {
@@ -49,7 +49,7 @@ test('object+array', function(t) {
   };
 
   t.deepEqual(
-    ogl(obj, 'a.b.c.d.*.e.f.g.h.i'),
+    lookup(obj, 'a.b.c.d.*.e.f.g.h.i'),
     ['wheew!', 'wheew!', 'wheew!'],
     'even if the tree path split because of an array, it still should work'
   );
@@ -76,12 +76,12 @@ test('array', function(t) {
   ];
 
   t.deepEqual(
-    ogl(obj, '0.0.0.0.0.0.0.0'),
+    lookup(obj, '0.0.0.0.0.0.0.0'),
     [1],
     'all array index'
   );
   t.deepEqual(
-    ogl(obj, '*.*.*.*.*.*.*.*'),
+    lookup(obj, '*.*.*.*.*.*.*.*'),
     [1],
     'all array wildcard'
   );
@@ -144,7 +144,7 @@ test('dropping non-existent keys', function(t) {
   ];
 
   t.deepEqual(
-    ogl(obj, '*.a.b.c.*.something.special'),
+    lookup(obj, '*.a.b.c.*.something.special'),
     [true],
     'if a key is not found in lookalike object/arrays, drop them'
   );
