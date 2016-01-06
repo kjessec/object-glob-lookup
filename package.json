@@ -3,6 +3,21 @@
   "version": "1.0.0",
   "description": "Access subtree elements using keypath, with wildcard ('*') support.",
   "main": "index.js",
+  "keywords": [
+    "key",
+    "subtree",
+    "keypath",
+    "object",
+    "obj",
+    "dot",
+    "notation",
+    "traverse",
+    "path",
+    "access",
+    "deep",
+    "bfs",
+    "wildcard"
+  ],
   "scripts": {
     "test": "tape test.js"
   },
