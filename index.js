@@ -1,8 +1,7 @@
 'use strict';
-function globLookup(src, keypath) {
-  var timeStart = new Date().getTime();
-  var path = keypath.split(globLookup.delimiter);
-  var res = path.reduce(function (candidates, key, idx) {
+function opw(src, keypath) {
+  var path = keypath.split(opw.delimiter);
+  var res = path.reduce(function (candidates, key) {
     if (!key.length) {
       throw new Error('Path cannot be empty.');
     }
@@ -34,7 +33,7 @@ function globLookup(src, keypath) {
   return res;
 }
 
-globLookup.delimiter = '.';
+opw.delimiter = '.';
 
-module.exports = globLookup;
+module.exports = opw;
 

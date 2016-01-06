@@ -1,3 +1,4 @@
+/* eslint id-length: 0 */
 'use strict';
 const lookup = require('../');
 const test = require('tape');
